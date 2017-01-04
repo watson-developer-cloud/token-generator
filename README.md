@@ -21,3 +21,8 @@ Then clone or [download](https://github.com/watson-developer-cloud/token-generat
 npm install
 npm start
 ```
+
+## Security
+
+Due to the security implications, it is recommended that you run your own copy of this code rather than using someone else's,
+and that you always use HTTPS.

@@ -15,7 +15,7 @@ Click the button to deploy to Bluemix:
 ## Running locally
 
 Requires [Node.js](https://nodejs.org/en/).
-Then clone or [download](https://github.com/watson-developer-cloud/token-generator/archive/master.zip) the code, a in the root directory run:
+Then clone or [download](https://github.com/watson-developer-cloud/token-generator/archive/master.zip) the code, and run:
 
 ```sh
 npm install

@@ -1,0 +1,7 @@
+---
+applications:
+- name: watson-token-generator
+  command: npm start
+  memory: 128m
+  env:
+    NODE_ENV: production

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watson Token Generator</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+</head>
+<body>
+
+<div class="container">
+
+
+  <h1>Watson Token Generator</h1>
+
+  <p>Use your <a href="http://www.ibm.com/watson/developercloud/doc/getting_started/gs-credentials.shtml">Watson service credentials</a>
+    to generate <a href="http://www.ibm.com/watson/developercloud/doc/getting_started/gs-tokens.shtml">Authorization tokens</a>
+    that can be used to access most services from a web browser.</p>
+
+  <p>Authorization tokens are pre-url-encoded and expire after 1 hour.</p>
+
+  <form action="/api/token" method="POST">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" class="form-control" required />
+      <p class="help-block">Note: the username is usually longer than the password.</p>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" size="13" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+      <label for="url">URL:</label>
+      <!-- HTML5 combobox FTW! -->
+      <input type="url" name="url" id="url" size="67" list="urls" class="form-control" required />
+      <datalist id="urls">
+        <!-- omitting Alchemy services and Visual Recognition because they only use tokens (no username/password) -->
+        <option value="https://gateway.watsonplatform.net/conversation/api"></option>
+        <option value="https://gateway.watsonplatform.net/conversation-experimental/api"></option>
+        <option value="https://gateway.watsonplatform.net/dialog/api"></option>
+        <option value="https://gateway.watsonplatform.net/discovery/api"></option>
+        <option value="https://gateway.watsonplatform.net/discovery-experimental/api"></option>
+        <option value="https://gateway.watsonplatform.net/document-conversion/api"></option>
+        <option value="https://gateway.watsonplatform.net/language-translation/api"></option>
+        <option value="https://gateway.watsonplatform.net/language-translation/api"></option>
+        <option value="https://gateway.watsonplatform.net/natural-language-classifier/api"></option>
+        <option value="https://gateway.watsonplatform.net/personality-insights/api"></option>
+        <option value="https://gateway.watsonplatform.net/personality-insights/api"></option>
+        <option value="https://gateway.watsonplatform.net/retrieve-and-rank/api"></option>
+        <option value="https://stream.watsonplatform.net/speech-to-text/api"></option>
+        <option value="https://stream.watsonplatform.net/text-to-speech/api"></option>
+        <option value="https://gateway.watsonplatform.net/tone-analyzer/api"></option>
+        <option value="https://gateway.watsonplatform.net/tradeoff-analytics/api"></option>
+      </datalist>
+    </div>
+
+    <Button type="submit" class="btn btn-default">Generate Token</Button>
+  </form>
+
+</div>
+
+</body>
+</html>

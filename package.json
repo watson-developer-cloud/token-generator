@@ -1,0 +1,23 @@
+{
+  "name": "watson-token-generator",
+  "version": "1.0.0",
+  "description": "Simple web server to generate watson tokens",
+  "private": true,
+  "main": "server.js",
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/watson-developer-cloud/token-generator.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Nathan Friedly <http://nfriedly.com/>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-secure-only": "^0.2.1",
+    "watson-developer-cloud": "^2.14.4"
+  }
+}

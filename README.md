@@ -1,6 +1,6 @@
 # Watson Token Generator
 
-Basic Node.js server with a form that accepts a service's credentials and URL and returns an [auth token](http://www.ibm.com/watson/developercloud/doc/getting_started/gs-tokens.shtml).
+Basic Node.js server with a form that accepts a service's credentials and URL and returns an [auth token](https://www.ibm.com/watson/developercloud/doc/common/getting-started-tokens.html).
 
 May be run from Bluemix, a Raspberry Pi, etc. Automatically redirects to HTTPS when running on Bluemix.
 

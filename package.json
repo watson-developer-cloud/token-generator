@@ -5,19 +5,26 @@
   "private": true,
   "main": "server.js",
   "repository": {
-    "type":"git",
+    "type": "git",
     "url": "https://github.com/watson-developer-cloud/token-generator.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "npm run lint && jest test",
+    "start": "node server.js",
+    "lint": "eslint .",
+    "autofix": "eslint --fix ."
   },
   "author": "Nathan Friedly <http://nfriedly.com/>",
   "license": "Apache-2.0",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
     "express-secure-only": "^0.2.1",
-    "watson-developer-cloud": "^2.14.4"
+    "supertest": "^3.1.0",
+    "watson-developer-cloud": "^3.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0",
+    "jest": "^23.4.1"
   }
 }

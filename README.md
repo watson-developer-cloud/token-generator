@@ -9,7 +9,7 @@ May be run from Bluemix, a Raspberry Pi, etc. Automatically redirects to HTTPS w
 
 Click the button to deploy to Bluemix:
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/watson-developer-cloud/token-generator)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/watson-developer-cloud/token-generator) [![Greenkeeper badge](https://badges.greenkeeper.io/watson-developer-cloud/token-generator.svg)](https://greenkeeper.io/)
 
 
 ## Running locally
